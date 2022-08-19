@@ -4,10 +4,17 @@
  */
 package Interfaz;
 
+import Modelo.Usuario;
+import java.util.List;
+
 /**
  *
  * @author Bryan
  */
 public interface CRUDUser {
-    
+    public List listar();
+    public Usuario list(int id);
+    public boolean add(Usuario user);
+    public boolean edit(Usuario user);
+    public boolean eliminar(int id);
 }
